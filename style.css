@@ -25,33 +25,11 @@ h1 {
   background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
   background-size: text;
   -webkit-background-clip: text;
-}
-
-
-#box {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-
-
 
 }
 
-#box input {
-  padding: 10px 5px;
-  border-radius: 10px;
-  outline: none;
-  border: none;
-  color: white;
-  font-size: 14px;
-  margin-bottom: 10px;
-  width: 70%;
-  background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
-}
 
-#box button {
+button {
   padding: 10px 20px;
   border: none;
   outline: none;
@@ -60,21 +38,40 @@ h1 {
   background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
   color: white;
   letter-spacing: 1px;
-  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 14px;
+  width: 50%;
+  text-transform: uppercase;
 }
 
 ::placeholder {
-  color: lemonchiffon;
+  color: black;
 }
 
 
-#result {
-  margin-top: 50px;
+
+
+.result {
+
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 5px;
   background: black;
-  display: none;
+  border-radius: 10px;
+
+}
+
+
+textarea {
+  width: 100%;
+  padding: 10px 5px;
+  background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224, 226, 228) 100.2%);
+  color: purple;
+}
+
+
+.top {
+  margin-top: -30px;
 }

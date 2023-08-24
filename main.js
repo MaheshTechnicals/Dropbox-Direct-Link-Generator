@@ -1,5 +1,8 @@
 let input = document.querySelector("#input")
 let btn = document.querySelector("#btn")
+let output = document.querySelector("#output")
+
+let number = 0;
 
 
 
@@ -36,14 +39,13 @@ btn.addEventListener("click", () => {
 
 
 let Genrate = () => {
-
+  number++
   let url = "https://www.dl.dropboxusercontent.com"
   let val = input.value
   let convert = url + val.slice(23)
 
-console.log (convert)
+  output.value += `(${number}) 👉 ${convert},\n`
+  input.value = ""
 
 
 }
-
-
