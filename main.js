@@ -3,6 +3,7 @@ let btn = document.querySelector("#btn")
 
 
 
+
 // Remeve placeholder on input click
 input.addEventListener("click", () => {
   input.removeAttribute("placeholder")
@@ -13,9 +14,9 @@ input.addEventListener("click", () => {
 // On click on button.
 btn.addEventListener("click", () => {
 
-  let val = input.value
 
-  if (val == "") {
+
+  if (input.value == "") {
     alert("😔 Please Enter Link First.")
   }
 
@@ -27,3 +28,22 @@ btn.addEventListener("click", () => {
 
 
 })
+
+
+
+
+
+
+
+let Genrate = () => {
+
+  let url = "https://www.dl.dropboxusercontent.com"
+  let val = input.value
+  let convert = url + val.slice(23)
+
+console.log (convert)
+
+
+}
+
+
